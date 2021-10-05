@@ -6,6 +6,7 @@ const fastify = require('fastify')({
 
 // Declare a route
 fastify.get('/', function (request, reply) {
+  reply.type('text/html')
   reply.send(`
     <h1>Hostname:</h1>
     <h2>${os.hostname()}</h2>
