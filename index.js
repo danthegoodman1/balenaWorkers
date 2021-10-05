@@ -1,9 +1,4 @@
-const Fastify = require('fastify')
 const os = require('os')
-
-const fastify = Fastify({
-  logger: true
-})
 // CommonJs
 const fastify = require('fastify')({
   logger: true
