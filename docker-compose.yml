@@ -1,7 +1,6 @@
 version: "2"
 services:
   hello-world:
-    privileged: true
-    image: tutum/hello-world
+    build: .
     ports:
-      - 80:80
+      - 8080:8080
