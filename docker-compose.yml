@@ -1,6 +1,10 @@
 version: "2"
 services:
   hello-world:
-    build: .
+    build: ./server
     ports:
       - "80:80"
+  mdns-publisher:
+    build: ./mdnsPublisher
+    ports:
+      - "5353:5353"
